@@ -5,7 +5,7 @@
 //  Created by Павел on 03.08.2022.
 //
 
-import Foundation
+
 import Combine
 
 class ModelMan: ObservableObject {
@@ -13,19 +13,24 @@ class ModelMan: ObservableObject {
     let objectWillChange = PassthroughSubject<ModelMan, Never>()
     
     var sizeWidth = 200.0
-    var sizeHeight = 2000.0
+    var sizeHeight = 200.0
     
-    var legLeftAngle: Double = 90
-    var legRightAngle: Double = 0
+    var legLeftAngle: Double = 5
+    var legRightAngle: Double = 5
     
-    var kneeLeftAngle: Double = 45
+    var kneeLeftAngle: Double = 0
     var kneeRightAngle: Double = 0
     
     var height: Double {
-        min(minimalDimension / 0.4, sizeHeight * 1.3)
+        min(minimalDimension / 0.6, sizeHeight * 1.3)
     }
     var width: Double {
         height * 0.4
+    }    
+    var offset: Double  {
+        print(sizeWidth)
+        print(width)
+        return (sizeWidth - width) * 0.5
     }
     var headRadius: Double {
         width * 0.3

@@ -7,42 +7,6 @@
 
 import SwiftUI
 
-struct PositionSettings {
-    let legLeftAngle: Double
-    let legRightAngle: Double
-    let kneeLeftAngle: Double
-    let kneeRightAngle: Double
-}
-
-enum Position: Int {
-    case first
-    case second
-    case third
-    
-    func getPositionSettings() -> PositionSettings {
-        switch self {
-        case .first:
-            return PositionSettings(
-                legLeftAngle: 0,
-                legRightAngle: 0,
-                kneeLeftAngle: 0,
-                kneeRightAngle: 0)
-        case .second:
-            return PositionSettings(
-                legLeftAngle: 45,
-                legRightAngle: 0,
-                kneeLeftAngle: 0,
-                kneeRightAngle: 0)
-        case .third:
-            return PositionSettings(
-                legLeftAngle: 0,
-                legRightAngle: 45,
-                kneeLeftAngle: 0,
-                kneeRightAngle: 0)
-        }        
-    }
-}
-
 struct ContentView: View {
     
     @StateObject private var manModel = ModelMan()
@@ -67,9 +31,9 @@ struct ContentView: View {
         } else {
             currentPosition = Position.first
         }
-        withAnimation {
+        withAnimation(.easeOut(duration: 1), {
             manModel.stay(in: currentPosition)
-        }
+        })
     }
     
 }
