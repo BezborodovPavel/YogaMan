@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E132AC9F289ABD9B00833438 /* ModelMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132AC9E289ABD9B00833438 /* ModelMan.swift */; };
 		E15C4FFA288FE92C0056EC1B /* YogaManApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C4FF9288FE92C0056EC1B /* YogaManApp.swift */; };
 		E15C4FFC288FE92C0056EC1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C4FFB288FE92C0056EC1B /* ContentView.swift */; };
 		E15C4FFE288FE9300056EC1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15C4FFD288FE9300056EC1B /* Assets.xcassets */; };
 		E15C5001288FE9300056EC1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15C5000288FE9300056EC1B /* Preview Assets.xcassets */; };
 		E15C5008288FE9780056EC1B /* Man.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C5007288FE9780056EC1B /* Man.swift */; };
+		E1E1673628A4D1AE0009B388 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1673528A4D1AE0009B388 /* Line.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E132AC9E289ABD9B00833438 /* ModelMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMan.swift; sourceTree = "<group>"; };
 		E15C4FF6288FE92C0056EC1B /* YogaMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15C4FF9288FE92C0056EC1B /* YogaManApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaManApp.swift; sourceTree = "<group>"; };
 		E15C4FFB288FE92C0056EC1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E15C4FFD288FE9300056EC1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E15C5000288FE9300056EC1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E15C5007288FE9780056EC1B /* Man.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Man.swift; sourceTree = "<group>"; };
+		E1E1673528A4D1AE0009B388 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 				E15C4FF9288FE92C0056EC1B /* YogaManApp.swift */,
 				E15C4FFB288FE92C0056EC1B /* ContentView.swift */,
 				E15C5007288FE9780056EC1B /* Man.swift */,
+				E132AC9E289ABD9B00833438 /* ModelMan.swift */,
+				E1E1673528A4D1AE0009B388 /* Line.swift */,
 				E15C4FFD288FE9300056EC1B /* Assets.xcassets */,
 				E15C4FFF288FE9300056EC1B /* Preview Content */,
 			);
@@ -142,7 +148,9 @@
 			files = (
 				E15C4FFC288FE92C0056EC1B /* ContentView.swift in Sources */,
 				E15C5008288FE9780056EC1B /* Man.swift in Sources */,
+				E132AC9F289ABD9B00833438 /* ModelMan.swift in Sources */,
 				E15C4FFA288FE92C0056EC1B /* YogaManApp.swift in Sources */,
+				E1E1673628A4D1AE0009B388 /* Line.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
